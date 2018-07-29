@@ -13,8 +13,7 @@ Searching users globally - Input in the search field any text or number and a li
        [
          {
           "name" : "Name lastName",
-          "shortname" : "Name_LastName", 
-          "address" : "streetName",
+          "shortname" : "Name_LastName",
           "postCode" : "number"
           "city" : "cityName",
           "country": "name of the country"
@@ -30,8 +29,7 @@ Searching users globally - Input in the search field any text or number and a li
         [
          {
           "name" : "Fabrizio Marras",
-          "shortname" : "Fabrizio_Marras", 
-          "address" : "Streetname",
+          "shortname" : "Fabrizio_Marras",
           "postCode" : "1234AB"
           "city" : "Amsterdam",
           "country": "Netherlands"
