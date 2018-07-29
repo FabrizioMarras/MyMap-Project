@@ -20,7 +20,7 @@ Searching users globally - Input in the search field any text or number and a li
          "job" : "Position",
          "description" : "Job Description",
          "contact" : "email@email.com",
-         "skills" : ["skill01","skill02","skill03",]
+         "skills" : ["skill01","skill02","skill03"]
          }
        ]
         
@@ -37,7 +37,7 @@ Searching users globally - Input in the search field any text or number and a li
           "job" : "Fronend Developer",
           "description" : "Develop and Design of website, 2D and 3D animation videos.",
           "contact" : "fabrizioi@marras.com",
-          "skills" : ["skill01","skill02","skill03",]
+          "skills" : ["skill01","skill02","skill03"]
           }
         ]
         
