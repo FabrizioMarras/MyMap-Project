@@ -1,0 +1,26 @@
+[
+  {
+    "name" : "Nome Cognome",
+    "shortname" : "Nome_Cognome",
+    "postcode" : "1018WD",
+    "city" : "Amsterdam",
+    "country": "The Netherlands",
+    "department" : "Painting and Sculpture",
+    "job" : "Painter",
+    "description" : "Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture.",
+    "contact" : "Nome@Cognome.com",
+    "skills" : ["paint", "draw", "oil","computers"]
+  },
+  {
+    "name" : "Name Lastname",
+    "shortname" : "Name_Lastname",
+    "postcode" : "56273",
+    "city" : "London",
+    "country": "England",
+    "department" : "IT",
+    "job" : "Programmer",
+    "description" : "The Artist to Watch in 2012 by the London Review, Johnathan has already sold one of the highest priced-commissions paid to an art student, ever on record.",
+    "contact" : "Name@Lastname.com",
+    "skills" : ["computers", "mobile", "tablets"]
+  }
+]
