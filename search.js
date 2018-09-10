@@ -18,7 +18,7 @@
 						output += '<h4>'+ val.city +'</h4>'; // output the list item - city.
 						output += '<p>'+ val.description +'</p>'; // output the list item - job description.
 						output += '<p>'+ val.skills.join(' / ') +'</p>'; // output the list item - skills.
-						output += '<a href="mailto:'+ val.contact +'" title="send email">'+ val.contact +'</a>'; // output the list item - contact info: email.
+						output += '<a href="mailto:'+ val.contact +'" title="send email">'+ val.contact +'</a>'; // output the list item - contact info: email as a link directly to send the email.
 						output += '</li>'; // close output of the list items.
 					}
 				});

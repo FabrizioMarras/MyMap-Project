@@ -20,7 +20,13 @@
 body {
 	background: #7b7b7b;
 }
-
+/* Map */
+#map {
+	margin: 0 auto;
+	width: 80%;
+	height:450px;
+}
+/* Search */
 #searcharea {
 	margin: 0 auto;
 	text-align: center;
@@ -55,7 +61,7 @@ border-top-right-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
-
+/* Results */
 #update {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	width: 80%;
