@@ -1,9 +1,10 @@
 
- $('#search').keyup(function() { // binding the keyup element - activate the reading of the JSON when someone click to write on the search.before that there is no element displayed on the page
+ function searchUser() { // binding the keyup element - activate the reading of the JSON when someone click to write on the search.before that there is no element displayed on the page
 		var searchField = $('#search').val(); // get the typed text.
 		var myExp = new RegExp(searchField, "i"); // regular expression to check case insensitive (typing "i") in the search field.
 			$.getJSON('data.json', function(data) { // Read the JSON data and feed the data into a function literal.
-				var output = '<ul class="searchresults">'; // output the JSON data into the HTML, with a class to target it with CSS.
+
+        var output = '<ul class="searchresults">'; // output the JSON data into the HTML, with a class to target it with CSS.
 				$.each(data, function(key, val) { // each statement to output the list items.
 					if ((val.name.search(myExp) != -1) || // after reading the typing: not equal to -1, means it did find the data.
 					(val.city.search(myExp) != -1) ||
@@ -23,6 +24,11 @@
 					}
 				});
 				output += '</ul>'; // closing the output from placing the JSON data into the HTML.
-				$('#update').html(output);
+
+        // Inject the variable output output in the html document
+        $('#update').html(output);
+
 			}); //get JSON
-});
+}
+
+$('#search').keyup(searchUser);

@@ -3,35 +3,78 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Live Search</title>
-	<!-- MAP necessary links and CDNs -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
-	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
-	<!-- Mapbox -->
-	<script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
-	<link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
-
-
+	<!-- Google Maps API -->
+	<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script> -->
+	<!-- Geolocation Script: Lynda.com Course: HTML5 Geolocation - https://www.linkedin.com/learning/html5-geolocation -->
+	<!-- <script src="geolocation.js" sync></script> -->
+	<!-- Bootstrap -->
+		<!-- CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous">
+		<!-- JQUERY -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous">
+		</script>
+		<!-- Popper -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			crossorigin="anonymous">
+		</script>
+		<!-- Bootstrap.js -->
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+			crossorigin="anonymous">
+		</script>
 	<!-- CSS of the page -->
 	<link rel="stylesheet" href="styles.css" />
 
+
+
 </head>
-<body>
-<!-- Search Area -->
-<div id="searcharea">
-	<label for="search">search user</label>
-	<p>Enter the name or info about a speaker</p>
-	<input type="search" name="search" id="search" placeholder="user name or info" />
-</div>
-<!-- Map -->
-<div id="map"></div>
-<!-- Results -->
-<div id="update"></div>
-<!-- Scripts -->
-<script src="jquery.js">// add the JQUERY file</script>
-<script src="search.js">// add the SEARCH functionality search.js file</script>
-<script src="map.js"> // add the map.js file</script>
+<body class="bg-dark">
+
+	<!-- Search Area -->
+  <form id="searcharea" class="text-light p-4">
+    <label for="search"><h1>Search</h1></label>
+    <p>Enter what you want to search.</p>
+    <input class="form-control form-control-lg" type="search" name="search" id="search" placeholder="Name, Lastname, Address, Location, ..." />
+  </form>
+	<!-- Map -->
+	<div id="map" class=""></div>
+	<!-- Results -->
+	<aside id="update"></aside>
+
+<footer>
+<small class="text-light position-fixed fixed-bottom text-right m-2 z-">&#9400; 2018 | All rights reserved! Design by <a href="https://fabriziomarras.com/" target="_blank" class="text-light font-weight-bold ">Fabrizio Marras</a></small>
+
+</footer>
+	<!-- Scripts -->
+	<!-- JQUERY -->
+	<script src="jquery.js">// add the JQUERY file to enable the JSON requests - NOT sure why the JQUERY on top is not working for this.</script>
+	<!-- Google Maps API -->
+  <script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-Kmj5CjwXxHXXY0kAaKU3zze7265HUgg&callback=initMap"
+    async defer>
+  </script>
+	<!-- Global Variables -->
+	<!-- <script src="globalVariables.js"></script> -->
+	<!-- add the map -->
+	<script src="map.js"> // add the map.js file</script>
+
+	<!-- search -->
+	<script src="search.js">// add the SEARCH functionality search.js file</script>
+	<!-- <script type="text/javascript">
+	// call the search function: for every letter typed the search is refined
+		$('#search').keyup(searchUser);
+	</script> -->
+
 
 </body>
 </html>

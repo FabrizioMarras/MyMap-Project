@@ -9,7 +9,8 @@
     "job" : "Painter",
     "description" : "Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture.",
     "contact" : "Nome@Cognome.com",
-    "skills" : ["paint", "draw", "oil","computers"]
+    "skills" : ["paint", "draw", "oil","computers"],
+    "location" : ["52.3633767", "4.910682"]
   },
   {
     "name" : "Name Lastname",
@@ -21,6 +22,7 @@
     "job" : "Programmer",
     "description" : "The Artist to Watch in 2012 by the London Review, Johnathan has already sold one of the highest priced-commissions paid to an art student, ever on record.",
     "contact" : "Name@Lastname.com",
-    "skills" : ["computers", "mobile", "tablets"]
+    "skills" : ["computers", "mobile", "tablets"],
+    "location" : ["51.52091840000001", "-0.1569368"]
   }
 ]
